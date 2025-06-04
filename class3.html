@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat&family=Nunito&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <style>
+        .navbar-nav .nav-link{
+           border: 2px solid transparent;
+        }
+
+        .navbar-nav .nav-link:hover{
+            color: red;
+            border-bottom: 2px solid red;
+        }
+
+        .nav-item .active{
+            color: red;
+            border-bottom: 2px solid red !important;
+        }
+
+        #hero-section{
+            background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(hero.jpg)no-repeat;
+            height: 100vh;
+            background-size: cover;
+            background-position: center;
+        }
+
+        #about-section{
+            background: url(hero.jpg)no-repeat;
+            height: 300px;
+            background-size: cover;
+            background-position: center;
+            border-radius: 10px;
+        }
+
+        #call-to-action{
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(callToAction.jpg)no-repeat;
+            height: 350px;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        .gold{
+            color: #ffd700;
+        }
+        #footer{
+            font-size: 14px;
+        }
+        #team i{
+            color: brown;
+            font-size: 20px;
+        }
+
+        h1,h2,h3,h4,h5,h6{
+            font-family:"Montserrat", sans-serif;
+        }
+        p{
+            font-family: "Nunito", sans-serif;
+        }
+        #about-2 .col-md-6 p{
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body data-bs-spy="scroll" data-bs-target=".navbar">
+
+    <nav class="navbar navbar-expand-lg bg-light sticky-top">
+        <div class="container">
+            <a href="" class="navbar-brand fs-2" style="font-family: 'Lobster', sans-serif;"><span class="text-danger">Lo</span>go</a>
+
+            <button class="navbar-toggler" data-bs-target="#mynav" data-bs-toggle="collapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="navbar-collapse collapse text-end" id="mynav">
+                <ul class="navbar-nav mx-auto text-uppercase fw-semibold" style="font-family: 'Montserrat', sans-serif;">
+                    <li class="nav-item">
+                        <a href="#hero-section" class="nav-link mx-1">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#About" class="nav-link mx-1">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#service" class="nav-link mx-1">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#test" class="nav-link mx-1">Testimonial</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#team" class="nav-link mx-1">Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link mx-1">Contact us</a>
+                    </li>
+                </ul>
+
+                <button class="btn btn-danger mx-1 px-3 rounded-pill">Register</button>
+                <button class="btn btn-danger mx-1 px-3 rounded-pill">Login</button>
+            </div>
+        </div>
+    </nav>
+
+    <div id="hero-section" class="d-flex align-items-center justify-content-center">
+        <div class="text-white text-center col-11 col-md-6">
+            <h1 class="mb-4">Welcome to Kambok</h1>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum repudiandae deserunt eveniet nam? Temporibus cupiditate quisquam, facilis nulla aliquam voluptatem!
+            </p>
+            <button class="btn btn-danger btn-lg m-2 px-4 rounded-pill">Register</button>
+            <button class="btn btn-danger btn-lg m-2 px-4 rounded-pill">Login</button>
+        </div>
+    </div>
+
+    <div class="container py-5" id="About">
+        <div class="col-md-12 mx-auto">
+            <div class="row text-center mt-4">
+                <h2 class="mb-0 text-uppercase fw-semibold">About us</h2>
+                <div class="col-3 mx-auto mt-3 mb-5 border border-1">
+
+                </div>
+            </div>
+
+            <div class="row  g-4">
+                <div class="col-md-6">
+                    <h3>0ur vision</h3>
+                    <p class="text-secondary">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos odit nam modi accusamus illo alias architecto ea! Itaque in odit, similique repellat dolores repudiandae consectetur perspiciatis autem et, alias quia.
+                    </p>
+                </div>
+
+                <div class="col-md-6">
+                    <h3>Our mission</h3>
+                    <p class="text-secondary">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur enim eius ipsa quis rem sapiente tempora iure non! Animi excepturi odio non ipsa soluta neque provident sint omnis fugit quidem!
+                    </p>
+                    <button class="btn btn-outline-danger btn-lg">Read more</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+     <div class="container">
+        <div class="col-md-12 my-5 mx-auto">
+            <div class="ratio ratio-16x9">
+                <iframe src="https://www.youtube.com/embed/E0We5mC5VKo" frameborder="0"></iframe>
+            </div>
+        </div>
+    </div>
+
+    <div class="container py-5" id="service">
+        <div class="row text-center mt-5">
+            <h2 class="mb-0 text-uppercase fw-bold">Our Services</h2>
+            <div class="col-4 mx-auto mt-3 mb-5 border border-1"></div>
+        </div>
+    
+        <div class="row pb-5 g-4">
+            <div class="col-md-4">
+                <div class="card border-0 shadow">
+                    <img src="service1.jpg" alt="" class="card-img-top img-fuild">
+
+                    <div class="card-body mb-3">
+                        <p class="text-secondary">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam enim iure quae minus odio, dolores reprehenderit quas repellat dolore veniam rem accusantium commodi cumque ducimus, facere expedita distinctio maiores porro.
+                        </p>
+                        <button type="button" class="btn btn-danger">Read More</button>
+                    </div>
+                </div>
+            </div>
+
+             <div class="col-md-4">
+                <div class="card border-0 shadow">
+                    <img src="service2.jpg" alt="" class="card-img-top img-fuild">
+
+                    <div class="card-body mb-3">
+                        <p class="text-secondary">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam enim iure quae minus odio, dolores reprehenderit quas repellat dolore veniam rem accusantium commodi cumque ducimus, facere expedita distinctio maiores porro.
+                        </p>
+                        <button type="button" class="btn btn-danger">Read More</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card border-0 shadow">
+                    <img src="service3.jpg" alt="" class="card-img-top img-fuild">
+
+                    <div class="card-body mb-3">
+                        <p class="text-secondary">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam enim iure quae minus odio, dolores reprehenderit quas repellat dolore veniam rem accusantium commodi cumque ducimus, facere expedita distinctio maiores porro.
+                        </p>
+                        <button type="button" class="btn btn-danger">Read More</button>
+                    </div>
+                </div>
+            </div>
+         </div>
+    </div>
+
+    <div id="call-to-action" class="d-flex align-items-center justify-content-end p-3">
+            <div class="text-white text-center col- col-md-5">
+                <h2>
+                    Lorem ipsum dolor sit amet.
+                </h2>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus sint, quam atque ut explicabo distinctio?
+                </p>
+                <button class="btn btn-danger btn-lg m-2 px-4 rounded-pill">Register</button>
+            </div>
+    </div>
+
+    <div class="container py-5" id="test">
+                <div class="row text-center mt-5">
+                    <h2 class="mb-0 text-uppercase fw-bold">Testimonial</h2>
+                    <div class="col-4 mx-auto mt-3 mb-5 border border-1 border-black"></div>
+                </div>
+
+                <div class="">
+                    <div class="carousel slide" id="caro" data-bs-ride="carousel">
+
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-slide-to="0" data-bs-target="#caro" class="active bg-danger"></button>
+                            <button type="button" data-bs-slide-to="1" data-bs-target="#caro" class="bg-danger"></button>
+                            <button type="button" data-bs-slide-to="2" data-bs-target="#caro" class="bg-danger"></button>
+                            <button type="button" data-bs-slide-to="3" data-bs-target="#caro" class="bg-danger"></button>
+                        </div>
+
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" data-bs-interval="1000">
+                                <div class="col-9 col-md-6 mx-auto pb-5">
+                                    <div class="card border-0 shadow-lg my-5">
+                                        <div class="row g-0">
+                                            <div class="col-4 d-flex align-item-center">
+                                                <div class="card-body text-center">
+                                                    <img src="test1.webp" alt="" class="rounded-circle img-fluid" width="150px"> 
+                                                </div>
+                                            </div>
+
+                                            <div class="col-8">
+                                                <div class="card-body p-0 pt-2">
+                                                    <h3 class="fw-bold mb-0">Mark Daniel</h3>
+                                                    <p class="mb-0">Entreprenuer</p>
+                                                    <p>
+                                                        <i class="bi bi-star-fill gold mx-1"></i>
+                                                        <i class="bi bi-star-fill gold mx-1"></i>
+                                                        <i class="bi bi-star-fill gold mx-1"></i>
+                                                        <i class="bi bi-star-fill gold mx-1"></i>
+                                                        <i class="bi bi-star-fil gold mx-1"></i>
+                                                    </p>
+                                                    <p>
+                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, voluptatem.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                             <div class="carousel-item">
+                               <div class="col-9 col-md-6 mx-auto pb-5">
+                                    <div class="card border-0 shadow-lg my-5">
+                                        <div class="row g-0">
+                                            <div class="col-4 d-flex align-item-center">
+                                                <div class="card-body text-center">
+                                                    <img src="test2.webp" alt="" class="rounded-circle img-fluid" width="150px"> 
+                                                </div>
+                                            </div>
+
+                                            <div class="col-8 d-flex align-item-center">
+                                                <div class="card-body p-0 pt-2">
+                                                    <h3 class="fw-bold mb-0">Sandra bullocks</h3>
+                                                    <p class="mb-0">Entreprenuer</p>
+                                                    <p>
+                                                        <i class="bi bi-star-fill gold mx-1"></i>
+                                                        <i class="bi bi-star-fill gold mx-1"></i>
+                                                        <i class="bi bi-star-fill gold mx-1"></i>
+                                                        <i class="bi bi-star-fill gold mx-1"></i>
+                                                        <i class="bi bi-star-fil gold mx-1"></i>
+                                                    </p>
+                                                    <p>
+                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, voluptatem.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                             <div class="carousel-item">
+                               <div class="col-9 col-md-6 mx-auto pb-5">
+                                    <div class="card border-0 shadow-lg my-5">
+                                        <div class="row g-0">
+                                            <div class="col-4">
+                                                <div class="card-body text-center">
+                                                    <img src="test3.webp" alt="" class="rounded-circle img-fluid" width="150px"> 
+                                                </div>
+                                            </div>
+
+                                            <div class="col-8">
+                                                <div class="card-body p-0 pt-2">
+                                                    <h3 class="fw-bold mb-0">Oliver Daniel</h3>
+                                                    <p class="mb-0">Entreprenuer</p>
+                                                    <p>
+                                                        <i class="bi bi-star-fill gold mx-1"></i>
+                                                        <i class="bi bi-star-fill gold mx-1"></i>
+                                                        <i class="bi bi-star-fill gold mx-1"></i>
+                                                        <i class="bi bi-star-fill gold mx-1"></i>
+                                                        <i class="bi bi-star-fil gold mx-1"></i>
+                                                    </p>
+                                                    <p>
+                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, voluptatem.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button class="carousel-control-next" data-bs-target="#caro" data-bs-slide="next">
+                            <span class="carousel-control-next-icon bg-danger"></span>
+                        </button>
+
+                        <button class="carousel-control-prev" data-bs-target="#caro" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon bg-danger"></span>
+                        </button>
+                    </div>
+                </div>
+
+    </div>
+
+    <div class="container-fluid py-5 bg-dark-subtle" id="team">
+            <div class="col-md-11 mx-auto">
+                <div class="row text-center mt-5">
+                    <h2 class="mb-0 text-uppercase fw-bold">Our Team</h2>
+                    <div class="col-4 mx-auto mt-3 mb-5 border border-1 border-black"></div>
+                </div>
+                <div class="row g-4 pb-5">
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+                        <div class="card border-0 shadow">
+                            <div class="card-body text-center">
+                                <img src="team1.jpg" alt="" class="img-fuild rounded-circle mb-3" width="150px" height="150px">
+                                <h3 class="fw-bold mb-1">Sam White</h3>
+                                <p class="text-secondary">
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis, corrupti?
+                                </p>
+
+                                <p class="fs-2">
+                                    <i class="bi bi-facebook"></i>
+                                    <i class="bi bi-whatsapp"></i>
+                                    <i class="bi bi-instagram"></i>
+                                    <i class="bi bi-twitter-x"></i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+                        <div class="card border-0 shadow">
+                            <div class="card-body text-center">
+                                <img src="team2.jpg" alt="" class="img-fuild rounded-circle mb-3" width="150px" height="150px">
+                                <h3 class="fw-bold mb-1">Adrien Gold</h3>
+                                <p class="text-secondary">
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis, corrupti?
+                                </p>
+
+                                <p class="fs-2">
+                                    <i class="bi bi-facebook"></i>
+                                    <i class="bi bi-whatsapp"></i>
+                                    <i class="bi bi-instagram"></i>
+                                    <i class="bi bi-twitter-x"></i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+                        <div class="card border-0 shadow">
+                            <div class="card-body text-center">
+                                <img src="team3.jpg" alt="" class="img-fuild rounded-circle mb-3" width="150px" height="150px">
+                                <h3 class="fw-bold mb-1">John Stone</h3>
+                                <p class="text-secondary">
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis, corrupti?
+                                </p>
+
+                                <p class="fs-2">
+                                    <i class="bi bi-facebook"></i>
+                                    <i class="bi bi-whatsapp"></i>
+                                    <i class="bi bi-instagram"></i>
+                                    <i class="bi bi-twitter-x"></i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+                        <div class="card border-0 shadow">
+                            <div class="card-body text-center">
+                                <img src="team4.jpg" alt="" class="img-fuild rounded-circle mb-3" width="150px" height="150px">
+                                <h3 class="fw-bold mb-1">Cynthia kim</h3>
+                                <p class="text-secondary">
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis, corrupti?
+                                </p>
+
+                                <p class="fs-2">
+                                    <i class="bi bi-facebook"></i>
+                                    <i class="bi bi-whatsapp"></i>
+                                    <i class="bi bi-instagram"></i>
+                                    <i class="bi bi-twitter-x"></i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+
+    <div class="container py-5" id="contact">
+
+                <div class="row text-center mt-5">
+                    <h2 class="mb-0 text-uppercase fw-bold">Our Contact</h2>
+                    <div class="col-4 mx-auto mt-3 mb-5 border border-1 border-dark"></div>
+                </div>
+
+
+                    <div class="col-md-11 col-lg-10 mx-auto shadow-lg p-5 rounded-3">
+
+                        <div class="row g-4s">
+                            <div class="col-md-4">
+                                <h5 class="mb-0">Address</h5>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur.
+                                </p>
+                                <h5 class="mb-0">Phone Number</h5>
+                                <p>
+                                    +2349166052751
+                                </p>
+                                <h5 class="mb-0">Email</h5>
+                                <p>
+                                    support@log.com
+                                </p>
+                            </div>
+
+                            <div class="col-md-8">
+                                <form action="">
+                                    <div class="row mb-3">
+                                        <div class="col">
+                                            <input type="text" class="form-control" placeholder="First Name">
+                                        </div>
+
+                                        <div class="col">
+                                            <input type="text" class="form-control" placeholder="Last Name">
+                                        </div>
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <input type="Email" class="form-control" placeholder="Enter Your Email">
+                                    </div>
+                                       <textarea name="id" class="form-control" rows="3" placeholder="Enter Your Message"></textarea>
+
+                                       <div class="text-center">
+                                        <button type="button" class="btn btn-danger rounded-pill btn-lg px-4 m-3">Submitt</button>
+                                       </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+</div>
+        
+    <div class="container-fluid bg-dark py-5">
+            <div class="col-md-11 mx-auto">
+                <div class="row">
+                    <div class="col-md-6 col-lg-3 text-light">
+                        <a href="" class="text-decoration-none text-white fs-2" style="font-family: lobster, courier;"><span class="text-danger">Lo</span>go</a>
+                         <h5 class="mb-0 fw-bold mt-3">Address</h5>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur.
+                                </p>
+                                <h5 class="mb-0 fw-bold">Phone Number</h5>
+                                <p>
+                                    +2349166052751
+                                </p>
+                                <h5 class="mb-0 fw-bold">Email</h5>
+                                <p>
+                                    support@log.com
+                                </p>
+                    </div>
+
+                    <div class="col-md-6 col-lg-3">
+                        <h4 class="text-danger">Useful Link</h4>
+                        <p>
+                            <i class="bi bi-chevron-right text-secondary"></i>
+                            <a href="" class="text-decoration-none text-light"> Home</a>
+                        </p>
+
+                         <p>
+                            <i class="bi bi-chevron-right text-secondary"></i>
+                            <a href="" class="text-decoration-none text-light"> About</a>
+                        </p>
+
+                         <p>
+                            <i class="bi bi-chevron-right text-secondary"></i>
+                            <a href="" class="text-decoration-none text-light"> Services</a>
+                        </p>
+
+                         <p>
+                            <i class="bi bi-chevron-right text-secondary"></i>
+                            <a href="" class="text-decoration-none text-light"> Term Of Services</a>
+                        </p>
+                    </div>
+
+                     <div class="col-md-6 col-lg-3">
+                        <h4 class="text-danger">Our Services</h4>
+                        <p>
+                            <i class="bi bi-chevron-right text-secondary"></i>
+                            <a href="" class="text-decoration-none text-light"> Web Design</a>
+                        </p>
+
+                         <p>
+                            <i class="bi bi-chevron-right text-secondary"></i>
+                            <a href="" class="text-decoration-none text-light"> Web Development</a>
+                        </p>
+
+                         <p>
+                            <i class="bi bi-chevron-right text-secondary"></i>
+                            <a href="" class="text-decoration-none text-light"> Product Mangement</a>
+                        </p>
+
+                         <p>
+                            <i class="bi bi-chevron-right text-secondary"></i>
+                            <a href="" class="text-decoration-none text-light"> Markets</a>
+                        </p>
+                    </div>
+
+                       <div class="col-md-6 col-lg-3 text-light">
+            <h5 class="text-danger">Social Media</h5>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos placeat in quo corrupti quibusdam quod? Ducimus expedita tempora quasi deserunt?
+            </p>
+            <p class="fs-4">
+                <i class="bi bi-instagram me-3"></i>
+                <i class="bi bi-twitter-x me-3"></i>
+                <i class="bi bi-facebook me-3"></i>
+                <i class="bi bi-whatsapp me-3"></i>
+            </p>
+         </div>
+                </div>
+            </div>
+
+             <hr class="text-secondary">
+         <div class="row text-center text-secondary">
+            <p>
+                @ copyright <span class="fw-bold">ArshaTech</span>All Right Reserved
+            </p>
+         </div>
+    </div>
+
+
+</body>
+</html>
